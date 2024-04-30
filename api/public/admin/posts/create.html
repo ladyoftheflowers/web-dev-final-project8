@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>admin session..</title>
+
+<!-- Styling -->
+  <link rel="stylesheet" href="../../style.css">
+
+<!-- Styling admin-->
+  <link rel="stylesheet" href="../../admin.css">
+
+<!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/cdc64548be.js" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <h1 class="logo-text">admin session</h1>
+    </div>
+    <i class="fa-solid fa-bars menu-toggle"></i>
+    <ul class="topnav">
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-user"></i>
+            a.lukina<i class="fa-solid fa-chevron-down" style="font-size: .8em;"></i>
+        </a>
+        <ul>
+          <li><a href="#" class="logout">log out.</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+<!--ADMIN PAGE WRAPPER -->
+  <div class="admin-wrapper">
+  <!--Left sidebar -->
+    <div class="left-sidebar">
+      <ul>
+        <li><a href="index.html">manage posts..</a></li>
+        <li><a href="../users/index.html">manage users..</a></li>
+        <li><a href="../topics/index.html">manage topics..</a></li>
+      </ul>
+    </div>
+  <!-- //Left sidebar -->
+
+  <!--Admin content -->
+    <div class="admin-content">
+
+      <div class="button-group">
+        <a href="create.html" class="btn btn-big">create..</a>
+        <a href="index.html" class="btn btn-big">manage..</a>
+      </div>
+
+      <div class="content">
+        <h1 class="page-title">create..</h1>  
+        <form id="post-create-form">
+            <div class="field">
+              <div>
+                <label>title</label>
+                <input required ="text" name="title" class="text-input">
+
+                <label>body</label>
+                <textarea required name="desc" id="body" class="text-input" placeholder="start typing.."></textarea>
+              </div>
+              <div>
+                <label>topic</label>
+                <select required id="topic-select" name="topic" class="text-input">
+                </select>
+             </div>
+             <label>image url</label>
+                <input type="text" name="image" class="text-input">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-big contact-btn"><i class="fa-regular fa-envelope"><span>upload..</span></i></button>
+            </div>
+        </form>
+
+      </div>
+
+    </div>
+  <!-- //Admin content -->
+  </div>
+<!-- //ADMIN PAGE WRAPPER -->
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+  <!-- Custom script -->
+  <script type="module" src="../../js/admin/posts.mjs"></script>
+
+
+</body>
+
+</html>

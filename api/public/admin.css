@@ -1,0 +1,108 @@
+
+header {
+    background: rgb(38, 0, 82,0.8);
+}
+
+header ul li ul {
+    z-index: 88888;
+    background-color: rgb(38, 0, 82);
+}
+
+.admin-wrapper span {
+    font-family: "Nixie One", system-ui;
+}
+
+.admin-wrapper .btn-big {
+    background: rgb(38, 0, 82, 0.7);
+    text-decoration: none;
+}
+
+.admin-wrapper .btn-big:hover {
+    background: rgb(38, 0, 82);
+}
+
+.admin-wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 66px); 
+}
+
+.admin-wrapper .left-sidebar {
+    flex: 2;
+    height: 100%;
+    background: rgba(38, 0, 82, 0.8);
+    list-style: none;
+}
+
+.admin-wrapper .left-sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.admin-wrapper .left-sidebar ul li a {
+    display: block;
+    padding: 18px;
+    border-bottom: 1px solid rgb(38, 0, 82);
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover {
+    background: rgb(38, 0, 82);
+    color: white;
+}
+
+.admin-wrapper .admin-content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow: scroll;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.admin-content .edit {
+    color:green;
+}
+
+.edit:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.admin-content .delete {
+    color: rgb(185, 9, 9);
+}
+
+.delete:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.content .field {
+    margin: 15px;
+    padding: 15px;
+    background:rgba(203, 133, 221, 0.4);
+    border-radius: 10px;
+}
+
+
+

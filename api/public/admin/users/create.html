@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>admin session..</title>
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="../../style.css">
+
+  <!-- Styling admin-->
+  <link rel="stylesheet" href="../../admin.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/cdc64548be.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <h1 class="logo-text">admin session</h1>
+    </div>
+    <i class="fa-solid fa-bars menu-toggle"></i>
+    <ul class="topnav">
+      <li>
+        <a href="#">
+          <i class="fa-regular fa-user"></i>
+          a.lukina<i class="fa-solid fa-chevron-down" style="font-size: .8em;"></i>
+        </a>
+        <ul>
+          <li><a href="#" class="logout">log out.</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!--ADMIN PAGE WRAPPER -->
+  <div class="admin-wrapper">
+    <!--Left sidebar -->
+    <div class="left-sidebar">
+      <ul>
+        <li><a href="../posts/index.html">manage posts..</a></li>
+        <li><a href="index.html">manage users..</a></li>
+        <li><a href="../topics/index.html">manage topics..</a></li>
+      </ul>
+    </div>
+    <!-- //Left sidebar -->
+
+    <!--Admin content -->
+    <div class="admin-content">
+
+      <div class="button-group">
+        <a href="create.html" class="btn btn-big">new user..</a>
+        <a href="index.html" class="btn btn-big">manage users..</a>
+      </div>
+
+      <div class="content">
+        <h1 class="page-title">add user..</h1>
+        <form id="create-user-form">
+          <div class="field">
+            <div>
+              <label>username</label>
+              <input type="text" name="username" class="text-input">
+            </div>
+            <div>
+              <label>email</label>
+              <input type="email" name="email" class="text-input">
+            </div>
+            <div>
+              <label>password</label>
+              <input type="passmord" name="password" class="text-input">
+            </div>
+            <div>
+              <label>password confirmation</label>
+              <input type="password" name="passwordConf" class="text-input">
+            </div>
+            <div>
+              <label>admin?</label>
+              <input name="admin" type="checkbox">
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-big contact-btn"><i class="fa-regular fa-envelope"><span>
+                  add..</span></i></button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+    <!-- //Admin content -->
+
+
+  </div>
+  <!-- //ADMIN PAGE WRAPPER -->
+
+
+
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+  <!-- Custom script -->
+  <script type="module" src="../../js/admin/users.mjs"></script>
+
+
+</body>
+
+</html>

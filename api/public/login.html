@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>log in..</title>
+
+    <!-- Styling -->
+  <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cdc64548be.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+        <div class="logo">
+            <h1 class="logo-text">say smth..</h1>
+        </div>
+        <i class="fa-solid fa-bars menu-toggle"></i>
+        <ul class="topnav">
+            <li><a href="about.html">about.</a></li>
+            <li><a href="index.html">the wall.</a></li>
+            <!--<li><a href="#">sign up.</a></li>
+      <li><a href="#">log in.</a></li -->
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    a.lukina
+                    <i class="fa-solid fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+                <ul>
+                    <li><a href="/admin/posts">admin session</a></li>
+                    <li><a href="#" class="logout">log out.</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+
+  <div class="auth-content">
+    <form action="register.html" method="post">
+      <h2 class="foorm-title">hello, friend..</h2>
+
+      <div>
+        <label>username</label>
+        <input type="text" name="username" class="text-input"> 
+      </div>
+  
+      <div>
+        <label>password</label>
+        <input type="passmord" name="password" class="text-input"> 
+      </div>
+      <div>
+        <button type="submit" name="register-btn" class="btn btn-big">log in</button>
+      </div>
+      <p>don't remember? <a href="register.html">click here..</a></p>
+
+    </form>
+
+
+  </div>
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Custom script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
